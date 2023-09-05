@@ -191,6 +191,89 @@ header div {
 }
 
 
+.card-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+
+.content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    border-radius: 15px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  
+  .content-image{
+    width: 100%;
+  }
+  
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  
+  .content-details i{
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .fadeIn-bottom{
+    top: 80%;
+  }
+
+
 /* css responsive */
 
 @media only screen and (max-width: 426px) {
@@ -305,20 +388,57 @@ header div {
         font-size: 50px;
     }
 
-    .funny-card-section{
+    .funny-card-section {
         width: 1200px;
         height: auto;
         margin-top: 130px;
     }
-    .funny-title h3{
+
+    .funny-title h3 {
         font-size: 70px;
     }
-    .funny-title h3 span{
+
+    .funny-title h3 span {
         font-size: 70px;
     }
-    .funny-title p{
+
+    .funny-title p {
         font-size: 40px;
     }
+    .card-parent{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 120px;
+    }
+    .card-parent .card-title{
+        text-align: center;
+    }
+    .content-image{
+        width: 100%;
+    }
+    .content {
+        position: relative;
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
+      }
+      .content-details h3{
+        color: #fff;
+        font-weight: 500;
+        font-size: 80px;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+      }
+      
+      .content-details i{
+        color: #fff;
+        font-size: 70px;
+      }
+      .card-title{
+        font-size: 60px;
+      }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -357,4 +477,33 @@ header div {
         height: auto;
         margin: auto;
     }
+    .funny-title{
+        width: 1200px;
+        text-align: center;
+    }
+    .card-parent{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin-top: 120px;
+        margin: 0;
+    }
+
+    .content-details h3{
+        color: #fff;
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+      }
+      
+      .content-details i{
+        color: #fff;
+        font-size: 70px;
+      }
+      .card-title{
+        font-size: 30px;
+        text-align: center;
+        width: 600px;
+      }
 }
