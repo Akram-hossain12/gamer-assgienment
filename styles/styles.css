@@ -3,14 +3,16 @@ body {
 }
 
 /* header section css */
-header{
+header {
     width: 1200px;
     height: auto;
     margin: auto;
 }
+
 header div {
     display: grid;
     grid-template-columns: 50% 2fr;
+    margin-top: 5px;
 
 }
 
@@ -45,7 +47,7 @@ header div {
 .header-manu ul li {
     font-size: 18px;
     font-weight: 400;
-    margin-left: 35px;
+    margin-right: 35px;
     list-style: none;
 }
 
@@ -77,23 +79,133 @@ header div {
     color: red;
     margin-right: 10px;
 }
-.fllow-title a .fa-tiktok{
+
+.fllow-title a .fa-tiktok {
     font-size: 24px;
     color: black;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
-/* header css responsive */
+
+
+/* main section css  */
+.banner-section {
+    background-image: url('/assests/images/imge\ \(2\).png');
+    margin-top: 20px;
+    background-repeat: no-repeat;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+
+}
+
+.banner-text h4 {
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0%;
+}
+
+.banner-text h1 {
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0%;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-text p {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.banner-img img {
+    width: auto;
+    height: 600px;
+}
+
+.btn-primary {
+    padding: 21px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #F948B2;
+    border-radius: 48px;
+    border: 0;
+}
+
+.btn-success {
+    padding: 21px 40px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #4EC5F7;
+    border-radius: 48px;
+    border: 0;
+}
+
+/* online games section */
+.funny-card-section {
+    margin-top: 40px;
+}
+
+.funny-title h3 {
+    color: #534C64;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+}
+
+.funny-title h3 span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.funny-title p {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* css responsive */
 
 @media only screen and (max-width: 426px) {
-    header div{
-       display: grid;
-       grid-template-columns: none;
-       justify-content: center;
-       align-items: center;
+
+    /* header responsiv */
+    header div {
+        display: grid;
+        grid-template-columns: none;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
     }
+
     .header-manu ul {
-       display: inline;
+        display: inline;
     }
 
     .header-title h2 {
@@ -102,53 +214,147 @@ header div {
         font-weight: 700;
         margin: 10px;
     }
+
     .header-title img {
         margin-right: 20px;
         height: 100px;
     }
+
     .header-manu ul li {
         font-size: 60px;
         margin-top: 36px;
         font-weight: 400;
 
     }
+
     .header-manu ul li a {
         color: #3C354F;
     }
 
-    .fllow-title{
+    .fllow-title {
         height: 100px;
         width: 462px;
-      
+        margin-top: 80px;
+
     }
-    .fllow-title h4{
-        font-size: 38px;
+
+    .fllow-title h4 {
+        font-size: 48px;
         color: #3C354F;
     }
- }
 
- @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
-    header{
+    .fllow-title a .fa-youtube {
+        font-size: 44px;
+    }
+
+    .fllow-title a .fa-tiktok {
+        font-size: 44px;
+        margin-left: 12px;
+
+    }
+
+    /* banner responsive */
+
+
+    .banner-section {
+        width: 520px;
+        height: 1200px;
+        margin-top: 230px;
+    }
+
+    .banner {
+
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 340px;
+    }
+
+    .banner-text {
+        background-image: url('/assests/images/imge\ \(2\).png');
+        background-repeat: no-repeat;
+        margin-top: 120px;
+        padding: 20px 20px;
+    }
+
+    .banner-text p {
+        color: #534C64;
+        font-size: 60px;
+        font-weight: 500;
+        text-transform: lowercase;
+    }
+
+    .banner-img {
+        margin-top: 160px;
+    }
+
+    .banner-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-primary {
+        padding: 41px 80px;
+        color: #FFF;
+        font-size: 50px;
+    }
+
+    .btn-success {
+        padding: 41px 80px;
+        color: white;
+        font-size: 50px;
+    }
+
+    .funny-card-section{
+        width: 1200px;
+        height: auto;
+        margin-top: 130px;
+    }
+    .funny-title h3{
+        font-size: 70px;
+    }
+    .funny-title h3 span{
+        font-size: 70px;
+    }
+    .funny-title p{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* header ipad responsive */
+    header {
         width: 700px;
         height: auto;
         margin: auto;
     }
-    header div{
+
+    header div {
         display: grid;
         grid-template-columns: none;
         margin-top: 30px;
-     }
-     .header-title{
+    }
+
+    .header-title {
         display: flex;
         justify-content: center;
-     }
-     .header-manu{
+    }
+
+    .header-manu {
         display: flex;
         justify-content: space-between;
         align-items: center;
-     }
-     .header-manu ul{
+    }
+
+    .header-manu ul {
         margin-right: 20px;
         font-size: 38px;
-     }
-  }
+    }
+
+    .banner {
+        width: 700px;
+        height: auto;
+        margin: auto;
+    }
+}
